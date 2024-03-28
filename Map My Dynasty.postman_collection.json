@@ -1,0 +1,1763 @@
+{
+	"info": {
+		"_postman_id": "3df08103-5701-43c9-9034-37b81093f5e1",
+		"name": "Map My Dynasty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31381083",
+		"_collection_link": "https://universal-shadow-784945.postman.co/workspace/My-Workspace~c6369480-b971-4540-87a9-6f5d74c16484/collection/31381083-3df08103-5701-43c9-9034-37b81093f5e1?action=share&source=collection_link&creator=31381083"
+	},
+	"item": [
+		{
+			"name": "Relatios",
+			"item": [
+				{
+					"name": "Edit Family Name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "family_name",
+									"value": "testinggg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/relations/edit_family_name",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"relations",
+								"edit_family_name"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit Family Name",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "family_name",
+											"value": "testinggg",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/relations/edit_family_name",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"relations",
+										"edit_family_name"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "574"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23e-+UVYk3S5yu1S6RLL5AFLKQ1I+T4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 13 Feb 2024 08:34:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Family name updated successfully\",\n    \"data\": {\n        \"_id\": \"65ca231ceb520fdeac22f920\",\n        \"user_type\": \"user\",\n        \"first_name\": \"jkkk\",\n        \"last_name\": \"aaa\",\n        \"middle_name\": \"bbb\",\n        \"email_address\": \"hdumradiya.weapplinse@gmail.com\",\n        \"password\": \"a790a1454337613a4576222c1e79f151\",\n        \"dob\": \"2002-02-23T00:00:00.000Z\",\n        \"profile_picture\": \"http://192.168.29.243:8005/public/profile_picture/5673_1707747274109.jpg\",\n        \"family_name\": \"testinggg\",\n        \"is_self_delete\": false,\n        \"otp\": null,\n        \"is_deleted\": false,\n        \"createdAt\": \"2024-02-12T13:54:36.039Z\",\n        \"updatedAt\": \"2024-02-13T08:34:33.995Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Relation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "ccc",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "ccc",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2000-02-23T00:00:00.000Z",
+									"type": "text"
+								},
+								{
+									"key": "relation_type",
+									"value": "parent",
+									"description": "child, parent",
+									"type": "text"
+								},
+								{
+									"key": "parent_user_id",
+									"value": "65cc99599ddfa3cf2e6ca50e",
+									"type": "text"
+								},
+								{
+									"key": "profile_picture",
+									"type": "file",
+									"src": "/C:/Users/DREAMWORLD/Downloads/Screenshot 2024-02-01 163041.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/relations/add_relation",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"relations",
+								"add_relation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Relation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "ppppp",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "mmmm",
+											"type": "text"
+										},
+										{
+											"key": "dob",
+											"value": "2000-02-23T00:00:00.000Z",
+											"type": "text"
+										},
+										{
+											"key": "relation_type",
+											"value": "parent",
+											"description": "child, parent",
+											"type": "text"
+										},
+										{
+											"key": "parent_user_id",
+											"value": "65cb3d2e02f113961fb6ec31",
+											"type": "text"
+										},
+										{
+											"key": "profile_picture",
+											"type": "file",
+											"src": "/C:/Users/DREAMWORLD/Downloads/Screenshot 2024-02-01 163041.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/relations/add_relation",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"relations",
+										"add_relation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "534"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"216-rqTKhjL9YfnZGEjxQX+7smjkp+U\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 13 Feb 2024 11:54:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Relation added successfully\",\n    \"data\": {\n        \"_id\": \"65cb587c18350c7edcd95379\",\n        \"user_id\": \"65cb52e99800d1d66ff311b6\",\n        \"first_name\": \"ppppp\",\n        \"last_name\": \"mmmm\",\n        \"dob\": \"2000-02-23T00:00:00.000Z\",\n        \"profile_picture\": null,\n        \"relation_type\": \"parent\",\n        \"parent_user_id\": {\n            \"_id\": \"65cb3d2e02f113961fb6ec31\",\n            \"first_name\": \"aaa\",\n            \"last_name\": \"111\",\n            \"dob\": \"2002-02-23T00:00:00.000Z\"\n        },\n        \"relation_ids\": [\n            \"65cb587c18350c7edcd95379\"\n        ],\n        \"is_deleted\": false,\n        \"createdAt\": \"2024-02-13T11:54:36.617Z\",\n        \"updatedAt\": \"2024-02-13T11:54:36.673Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Relation List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/relations/relation_list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"relations",
+								"relation_list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Relation List",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/relations/relation_list",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"relations",
+										"relation_list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2144"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"860-F84xbcD+UVTti/ddCxz72HyrXTc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 13 Feb 2024 11:16:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Relation list successfully\",\n    \"data\": [\n        {\n            \"_id\": \"65cb3d2e02f113961fb6ec31\",\n            \"first_name\": \"aaa\",\n            \"last_name\": \"111\",\n            \"dob\": \"2002-02-23T00:00:00.000Z\",\n            \"profile_picture\": \"http://192.168.29.243:8005/public/profile_picture/8955_1707818286622.jpg\",\n            \"relation_type\": null,\n            \"relation_ids\": [\n                \"65cb3d2e02f113961fb6ec31\",\n                \"65cb3d3d02f113961fb6ec35\",\n                \"65cb3d5302f113961fb6ec3b\",\n                \"65cb3d6702f113961fb6ec41\"\n            ],\n            \"is_deleted\": false,\n            \"createdAt\": \"2024-02-13T09:58:06.633Z\",\n            \"updatedAt\": \"2024-02-13T09:59:03.422Z\",\n            \"user_id\": \"65ca231ceb520fdeac22f920\"\n        },\n        {\n            \"_id\": \"65cb3d3d02f113961fb6ec35\",\n            \"first_name\": \"nn\",\n            \"last_name\": \"22\",\n            \"dob\": \"2002-02-23T00:00:00.000Z\",\n            \"profile_picture\": \"http://192.168.29.243:8005/public/profile_picture/1209_1707818301821.jpg\",\n            \"relation_type\": \"child\",\n            \"parent_user_id\": {\n                \"_id\": \"65cb3d2e02f113961fb6ec31\",\n                \"first_name\": \"aaa\",\n                \"last_name\": \"111\",\n                \"dob\": \"2002-02-23T00:00:00.000Z\"\n            },\n            \"relation_ids\": [\n                \"65cb3d3d02f113961fb6ec35\"\n            ],\n            \"is_deleted\": false,\n            \"createdAt\": \"2024-02-13T09:58:21.824Z\",\n            \"updatedAt\": \"2024-02-13T09:58:21.870Z\",\n            \"user_id\": \"65ca231ceb520fdeac22f920\"\n        },\n        {\n            \"_id\": \"65cb3d5302f113961fb6ec3b\",\n            \"first_name\": \"nn\",\n            \"last_name\": \"333\",\n            \"dob\": \"2002-02-23T00:00:00.000Z\",\n            \"profile_picture\": \"http://192.168.29.243:8005/public/profile_picture/2121_1707818323062.jpg\",\n            \"relation_type\": \"child\",\n            \"parent_user_id\": {\n                \"_id\": \"65cb3d2e02f113961fb6ec31\",\n                \"first_name\": \"aaa\",\n                \"last_name\": \"111\",\n                \"dob\": \"2002-02-23T00:00:00.000Z\"\n            },\n            \"relation_ids\": [\n                \"65cb3d5302f113961fb6ec3b\",\n                \"65cb3d6702f113961fb6ec41\"\n            ],\n            \"is_deleted\": false,\n            \"createdAt\": \"2024-02-13T09:58:43.066Z\",\n            \"updatedAt\": \"2024-02-13T09:59:03.422Z\",\n            \"user_id\": \"65ca231ceb520fdeac22f920\"\n        },\n        {\n            \"_id\": \"65cb3d6702f113961fb6ec41\",\n            \"first_name\": \"uu\",\n            \"last_name\": \"44\",\n            \"dob\": \"2002-02-23T00:00:00.000Z\",\n            \"profile_picture\": \"http://192.168.29.243:8005/public/profile_picture/5238_1707818343284.jpg\",\n            \"relation_type\": \"child\",\n            \"parent_user_id\": {\n                \"_id\": \"65cb3d5302f113961fb6ec3b\",\n                \"first_name\": \"nn\",\n                \"last_name\": \"333\",\n                \"dob\": \"2002-02-23T00:00:00.000Z\"\n            },\n            \"relation_ids\": [\n                \"65cb3d6702f113961fb6ec41\"\n            ],\n            \"is_deleted\": false,\n            \"createdAt\": \"2024-02-13T09:59:03.288Z\",\n            \"updatedAt\": \"2024-02-13T09:59:03.331Z\",\n            \"user_id\": \"65ca231ceb520fdeac22f920\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Relation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "relation_id",
+									"value": "65cb3d5302f113961fb6ec3b",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/relations/delete_relation",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"relations",
+								"delete_relation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Relation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "relation_id",
+											"value": "65cb3d5302f113961fb6ec3b",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/relations/delete_relation",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"relations",
+										"delete_relation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53-CTxfEhNNuk2wOMUX2YpKzwWH83U\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 13 Feb 2024 11:53:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Relation deleted successfully\",\n    \"data\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Relation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "relation_id",
+									"value": "65cc99599ddfa3cf2e6ca50e",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "123132132",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "123132132",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2004-02-23T00:00:00.000Z",
+									"type": "text"
+								},
+								{
+									"key": "relation_type",
+									"value": "parent",
+									"type": "text"
+								},
+								{
+									"key": "parent_user_id",
+									"value": "65cb3d2e02f113961fb6ec31",
+									"type": "text"
+								},
+								{
+									"key": "profile_picture",
+									"type": "file",
+									"src": "/C:/Users/Administrator/Pictures/padel/padel13.jpg",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/relations/edit_relation",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"relations",
+								"edit_relation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit Relation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "relation_id",
+											"value": "65cc99599ddfa3cf2e6ca50e",
+											"type": "text"
+										},
+										{
+											"key": "first_name",
+											"value": "123132132",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "123132132",
+											"type": "text"
+										},
+										{
+											"key": "dob",
+											"value": "2004-02-23T00:00:00.000Z",
+											"type": "text"
+										},
+										{
+											"key": "relation_type",
+											"value": "parent",
+											"type": "text"
+										},
+										{
+											"key": "parent_user_id",
+											"value": "65cb3d3d02f113961fb6ec35",
+											"type": "text"
+										},
+										{
+											"key": "profile_picture",
+											"type": "file",
+											"src": "/C:/Users/Administrator/Pictures/padel/padel13.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/relations/edit_relation",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"relations",
+										"edit_relation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "583"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"247-nV8auVWuol3IfkihLbozVGfk4Sg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Feb 2024 10:46:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Relation edited successfully\",\n    \"data\": {\n        \"_id\": \"65cc99599ddfa3cf2e6ca50e\",\n        \"user_id\": \"65ca231ceb520fdeac22f920\",\n        \"first_name\": \"123132132\",\n        \"last_name\": \"123132132\",\n        \"dob\": \"2004-02-23T00:00:00.000Z\",\n        \"profile_picture\": \"profile_picture/8868_1707907576573.jpg\",\n        \"relation_type\": \"parent\",\n        \"parent_user_id\": \"65cb3d3d02f113961fb6ec35\",\n        \"relation_ids\": [\n            \"65cc99599ddfa3cf2e6ca50e\",\n            \"65cc99659ddfa3cf2e6ca514\",\n            \"65cc99709ddfa3cf2e6ca51a\",\n            \"65cc99aa9ddfa3cf2e6ca523\"\n        ],\n        \"is_deleted\": false,\n        \"createdAt\": \"2024-02-14T10:43:37.826Z\",\n        \"updatedAt\": \"2024-02-14T10:46:16.574Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_type",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "jk",
+							"type": "text"
+						},
+						{
+							"key": "email_address",
+							"value": "jk@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "2002-02-23T00:00:00.000Z",
+							"type": "text"
+						},
+						{
+							"key": "family_name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "aaa",
+							"type": "text"
+						},
+						{
+							"key": "middle_name",
+							"value": "bbb",
+							"type": "text"
+						},
+						{
+							"key": "profile_picture",
+							"type": "file",
+							"src": "/C:/Users/Administrator/Pictures/padel/padel1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/user/sign_up",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"user",
+						"sign_up"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sign Up",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_type",
+									"value": "user",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "jk",
+									"type": "text"
+								},
+								{
+									"key": "email_address",
+									"value": "jk@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2002-02-23T00:00:00.000Z",
+									"type": "text"
+								},
+								{
+									"key": "family_name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "aaa",
+									"type": "text"
+								},
+								{
+									"key": "middle_name",
+									"value": "bbb",
+									"type": "text"
+								},
+								{
+									"key": "profile_picture",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/sign_up",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"sign_up"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "607"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"25f-5gdecan38hJWVCuHwryTujmVumg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 13:54:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"User signup successfully\",\n    \"data\": {\n        \"user_type\": \"user\",\n        \"first_name\": \"jk\",\n        \"last_name\": \"aaa\",\n        \"middle_name\": \"bbb\",\n        \"email_address\": \"jk@gmail.com\",\n        \"password\": \"073d86b6cc2558aa949e4d2177237765\",\n        \"dob\": null,\n        \"profile_picture\": null,\n        \"family_name\": \"test\",\n        \"is_self_delete\": false,\n        \"otp\": null,\n        \"is_deleted\": false,\n        \"_id\": \"65ca231ceb520fdeac22f920\",\n        \"createdAt\": \"2024-02-12T13:54:36.039Z\",\n        \"updatedAt\": \"2024-02-12T13:54:36.039Z\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2EyMzFjZWI1MjBmZGVhYzIyZjkyMCIsImlhdCI6MTcwNzc0NjA3Nn0.19A7xyLtws6NhitombmzQMIRVfhvb-vLbaSc5eL-V_M\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email_address",
+							"value": "jk@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/user/sign_in",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"user",
+						"sign_in"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sign In",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email_address",
+									"value": "jk@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/sign_in",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"sign_in"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "565"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"235-H3N3tUTBr03m9Jv/RywLqFUJhqA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 13:55:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"You have login successfully \",\n    \"data\": {\n        \"_id\": \"65ca231ceb520fdeac22f920\",\n        \"user_type\": \"user\",\n        \"first_name\": \"jk\",\n        \"last_name\": \"aaa\",\n        \"middle_name\": \"bbb\",\n        \"email_address\": \"jk@gmail.com\",\n        \"dob\": null,\n        \"profile_picture\": null,\n        \"family_name\": \"test\",\n        \"is_self_delete\": false,\n        \"otp\": null,\n        \"is_deleted\": false,\n        \"createdAt\": \"2024-02-12T13:54:36.039Z\",\n        \"updatedAt\": \"2024-02-12T13:55:44.222Z\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2EyMzFjZWI1MjBmZGVhYzIyZjkyMCIsImlhdCI6MTcwNzc0NjE0NH0.ydN0_ZlSdEmpK6DsvOSd4H8i9z01z0syPa1xu343R_w\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Send OTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email_address",
+							"value": "hdumradiya.weapplinse@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/user/send_otp",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"user",
+						"send_otp"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Send OTP",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email_address",
+									"value": "hdumradiya.weapplinse@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/send_otp",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"send_otp"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5c-qoEvTCR9EiV2SwB+CGOAWUwdvuQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 13:57:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Verification code sent to your email\",\n    \"data\": 4142\n}"
+				}
+			]
+		},
+		{
+			"name": "Verify OTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email_address",
+							"value": "hdumradiya.weapplinse@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "1762",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/user/verify_otp",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"user",
+						"verify_otp"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Verify OTP",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email_address",
+									"value": "hdumradiya.weapplinse@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "1762",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/verify_otp",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"verify_otp"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "71"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47-L21pd+F9jV9+1OMPhpWpREVREbw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 14:00:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Email verified successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email_address",
+							"value": "hdumradiya.weapplinse@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/user/reset_password",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"user",
+						"reset_password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Reset Password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email_address",
+									"value": "hdumradiya.weapplinse@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/reset_password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"reset_password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "71"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47-8RomyqKadxVlFvod923RF6h2C+g\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 14:02:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Password reset successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "new_password",
+							"value": "1234567",
+							"type": "text"
+						},
+						{
+							"key": "old_password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/user/change_password",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"user",
+						"change_password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Change Password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "new_password",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/change_password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"change_password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "87"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"57-LgUwBZAglYuYPVxUFcrvezkIVOQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 14:04:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Your password has been updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/user/logout",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Logout",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/logout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "89"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"59-X4fiJIV88AIA2OOXLW0REisRhAo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 14:05:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Your account is logout successfully\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/user/get_profile",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"user",
+						"get_profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Profile",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/get_profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"get_profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "472"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1d8-MVZd2o2E4AMw2ILTouftMM7j9r0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 14:06:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"User details get successfully\",\n    \"data\": {\n        \"_id\": \"65ca231ceb520fdeac22f920\",\n        \"user_type\": \"user\",\n        \"first_name\": \"jk\",\n        \"last_name\": \"aaa\",\n        \"middle_name\": \"bbb\",\n        \"email_address\": \"hdumradiya.weapplinse@gmail.com\",\n        \"password\": \"a790a1454337613a4576222c1e79f151\",\n        \"dob\": null,\n        \"profile_picture\": null,\n        \"family_name\": \"test\",\n        \"is_self_delete\": false,\n        \"otp\": null,\n        \"is_deleted\": false,\n        \"createdAt\": \"2024-02-12T13:54:36.039Z\",\n        \"updatedAt\": \"2024-02-12T14:05:57.562Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "jkkk",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "2002-02-23T00:00:00.000Z",
+							"type": "text"
+						},
+						{
+							"key": "family_name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "aaa",
+							"type": "text"
+						},
+						{
+							"key": "middle_name",
+							"value": "bbb",
+							"type": "text"
+						},
+						{
+							"key": "profile_picture",
+							"type": "file",
+							"src": "/C:/Users/Administrator/Pictures/Saved Pictures/image/2.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/user/edit_profile",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"user",
+						"edit_profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit Profile",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "jkkk",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2002-02-23T00:00:00.000Z",
+									"type": "text"
+								},
+								{
+									"key": "family_name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "aaa",
+									"type": "text"
+								},
+								{
+									"key": "middle_name",
+									"value": "bbb",
+									"type": "text"
+								},
+								{
+									"key": "profile_picture",
+									"type": "file",
+									"src": "/C:/Users/Administrator/Pictures/Saved Pictures/image/2.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/edit_profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"edit_profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "570"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"23a-zZh3vdt+L8RVKdgv1c7XuAAV7Ik\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 14:14:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Your account updated successfully\",\n    \"data\": {\n        \"_id\": \"65ca231ceb520fdeac22f920\",\n        \"user_type\": \"user\",\n        \"first_name\": \"jkkk\",\n        \"last_name\": \"aaa\",\n        \"middle_name\": \"bbb\",\n        \"email_address\": \"hdumradiya.weapplinse@gmail.com\",\n        \"password\": \"a790a1454337613a4576222c1e79f151\",\n        \"dob\": \"2002-02-23T00:00:00.000Z\",\n        \"profile_picture\": \"http://192.168.29.243:8005/public/profile_picture/5673_1707747274109.jpg\",\n        \"family_name\": \"test\",\n        \"is_self_delete\": false,\n        \"otp\": null,\n        \"is_deleted\": false,\n        \"createdAt\": \"2024-02-12T13:54:36.039Z\",\n        \"updatedAt\": \"2024-02-12T14:14:34.110Z\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2EyMzFjZWI1MjBmZGVhYzIyZjkyMCIsImlhdCI6MTcwNzc0NjE0NH0.ydN0_ZlSdEmpK6DsvOSd4H8i9z01z0syPa1xu343R_w",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
